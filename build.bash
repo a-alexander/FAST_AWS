@@ -5,6 +5,7 @@ lib_dir="$root_dir/libs"
 pip install -r "$root_dir/api/requirements.txt" -t libs --upgrade
 cd $lib_dir && zip -r9 "$root_dir/terraform/$project_name.zip" . \
 && cd "$root_dir/api" && zip -g ../terraform/"$project_name.zip" -r .
+cd "$root_dir/terraform" && terraform apply
 #
 #bucket_name="asa-lambdas"
 #cd $root_dir

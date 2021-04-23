@@ -9,7 +9,21 @@
 
 ---
 
-<i>This uses the AWS cli as well as Terraform. Both required locally.</i>
+## To Deploy:
+1. After cloning do a:
+   ```
+   terraform init 
+   ```
+   from the terraform folder. 
+2. Change the project name variable to suit.
+3. You may need to change the policy naming (if it warns you to)
+4. run the build.bash script which bundles everything up into a .zip which it then pushes to lambda after runing a 
+terraform apply to apply the changes.
+   
+5. End up with the URL of your shiny new deployment.
+
+
+<i>This uses the AWS cli (which you need to be logged in for) as well as Terraform. Both required locally.</i>
 
 ####Note to Self. 
 Resist the urge to have Terraform create and upload the lambda zip file. It's easily possible but potentially too
