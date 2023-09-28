@@ -3,7 +3,7 @@
 ---
 
 1. Fast API for the new hotness
-2. Magnum for wrapping it into a Lambda
+2. Mangum for wrapping it into a Lambda
 3. Quick bash (build.bash) script to bundle the API to a zip and uplaod to S3
 4. Terraform for deploying that Lambda to AWS and piping it to API Gateway
 
@@ -31,5 +31,5 @@ Resist the urge to have Terraform create and upload the lambda zip file. It's ea
  a team.
 
 ####Credit
-Heavily cribbed from this excellent article (part 1) for the FastAPI/magnum parts. 
+Heavily cribbed from this excellent article (part 1) for the FastAPI/mangum parts. 
 https://towardsdatascience.com/fastapi-aws-secure-api-part-2-1123bff28b55
